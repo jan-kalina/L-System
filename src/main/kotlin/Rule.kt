@@ -1,0 +1,1 @@
+class Rule(val character: Char, val transformation: String)
