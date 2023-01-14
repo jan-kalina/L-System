@@ -1,4 +1,4 @@
-class LSystem     // Construct an LSystem with a startin sentence and a ruleset
+class LSystem     // Construct an LSystem with a starting sentence and a ruleset
     (// The sentence (a String)
     val axiom: String, // The ruleset (an array of Rule objects)
     private val ruleset: List<Rule>
@@ -13,7 +13,7 @@ class LSystem     // Construct an LSystem with a startin sentence and a ruleset
         // An empty StringBuffer that we will fill
         val nextgen = StringBuffer()
         // For every character in the sentence
-        for (element in sentence) {
+        sentence.forEach { element ->
             // What is the character
             // We will replace it with itself unless it matches one of our rules
             var replace: String? = "" + element
